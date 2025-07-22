@@ -70,13 +70,13 @@ export default function Home() {
     const linkWebm = document.createElement('link');
     linkWebm.rel = 'preload'; // Note: prefetch au lieu de preload
     linkWebm.as = 'video';
-    linkWebm.href = '/final_memojis.webm';
+    linkWebm.href = '/final_memoji.mp4';
     document.head.appendChild(linkWebm);
 
     const linkMp4 = document.createElement('link');
     linkMp4.rel = 'prefetch';
     linkMp4.as = 'video';
-    linkMp4.href = '/final_memojis_ios.mp4';
+    linkMp4.href = '/final_memoji.mp4';
     document.head.appendChild(linkMp4);
   }, []);
 
@@ -88,7 +88,7 @@ export default function Home() {
           className="hidden bg-gradient-to-b from-neutral-500/10 to-neutral-500/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]"
           style={{ marginBottom: '-2.5rem' }}
         >
-          Toukoum
+          Caleb King
         </div>
       </div>
 
@@ -99,7 +99,7 @@ export default function Home() {
           animationDuration={1.5}
           label="Star"
           size={'sm'}
-          repoUrl="https://github.com/toukoum/portfolio"
+          repoUrl="https://github.com/calebking3/portfolio"
         />
       </div>
 
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
 
         <h2 className="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">
-          Hey, I'm Raphael 👋
+          Hey, I'm Caleb 👋
         </h2>
         <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
           AI portfolio
@@ -139,12 +139,16 @@ export default function Home() {
       {/* centre memoji */}
       <div className="relative z-10 h-52 w-48 overflow-hidden sm:h-72 sm:w-72">
         <Image
-          src="/landing-memojis.png"
-          alt="Hero memoji"
+          src="/caleb.gif"
+          alt="Hero Caleb"
           width={2000}
           height={2000}
           priority
           className="translate-y-14 scale-[2] object-cover"
+          onError={(e) => {
+            // @ts-ignore
+            e.target.src = '/avatar-landing.png';
+          }}
         />
       </div>
 

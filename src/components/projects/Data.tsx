@@ -152,7 +152,7 @@ const PROJECT_CONTENT = [
         alt: 'Chatbot of Defai',
       },
       {
-        src: '/defai4.jpeg',
+        src: '/defai4.png',
         alt: 'Winner team',
       },
     ],

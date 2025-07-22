@@ -29,24 +29,24 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Toukoum",
-      url: "https://toukoum.fr",
+      name: "Caleb King",
+      url: "https://calebking.io",
     },
   ],
-  creator: "Toukoum",
+  creator: "Caleb King",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://toukoum.fr",
-    title: "Toukoum Portfolio",
-    description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    siteName: "Toukoum Portfolio",
+    url: "https://calebking.io",
+    title: "Caleb King Portfolio",
+    description: "Interactive portfolio with an AI-powered avatar that answers questions about me",
+    siteName: "Caleb King Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Toukoum Portfolio",
-    description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    creator: "@toukoum",
+    title: "Caleb King Portfolio",
+    description: "Interactive portfolio with an AI-powered avatar that answers questions about me",
+    creator: "@KingCaleb3",
   },
   icons: {
     icon: [
